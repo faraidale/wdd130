@@ -1,0 +1,60 @@
+/* General page styles */
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #e9ecef;
+    /* soft gray background */
+    color: #333;
+    margin: 20px;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Temple card container */
+.temple-card {
+    background-color: #fdfdfd;
+    /* white card background */
+    border: 2px solid #ccc;
+    /* subtle border */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    /* center the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+h2 {
+    color: #006699;
+    margin-top: 15px;
+}
+
+h3 {
+    color: #0099cc;
+    margin-top: 10px;
+}
+
+/* Paragraphs and lists */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: #555;
+}
