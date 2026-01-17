@@ -15,12 +15,12 @@ header {
     color: #2c3e50;
 }
 
-/nav {
+/* Navigation links */
+
+nav {
     background-color: #e0e0e0;
     padding: 1rem;
 }
-
-/* Navigation links */
 
 nav a {
     color: #006699;
