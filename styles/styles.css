@@ -1,9 +1,50 @@
-/* Limit main width */
-main {
-    max-width: 840px;
+/* General page styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
 }
 
-/* Style aside */
+/* Header */
+header {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Navigation links */
+nav a {
+    color: #006699;
+    padding: 0.5rem;
+    display: block;
+}
+
+/* Main content */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Main heading */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Aside section */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -18,18 +59,12 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-    /* keeps aspect ratio */
-}
-
-/* Profile image inside main */
-main img {
-    width: 150px;
-    height: auto;
 }
 
 /* Paragraphs */
 p {
     padding: 0;
+    line-height: 1.6;
 }
 
 /* Footer */
