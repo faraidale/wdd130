@@ -77,3 +77,39 @@ article {
     width: 125px;
     margin-left: 10px;
 }
+
+/* --- Fixes for logo and social icons --- */
+
+/* Header layout: logo left, nav right */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo size */
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation links */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+/* Social media icons */
+.socialmedia img {
+    width: 32px;
+    height: auto;
+    margin-right: 8px;
+}
+
+/* Center footer content */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
