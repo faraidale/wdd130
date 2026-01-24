@@ -16,6 +16,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #fff;
 }
 
 header,
@@ -25,12 +26,14 @@ footer {
     margin: 0 auto;
 }
 
+/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Navigation and text blocks */
 nav,
 p,
 section,
@@ -39,10 +42,32 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+/* Header layout */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--accent2-color);
+    padding: 10px;
 }
 
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero section */
 .hero {
     position: relative;
 }
@@ -59,7 +84,7 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--accent1-color);
     color: #fff;
 }
@@ -68,8 +93,9 @@ article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
+    border: 2px solid var(--secondary-color);
 }
 
 .hero article img {
@@ -78,38 +104,35 @@ article {
     margin-left: 10px;
 }
 
-/* --- Fixes for logo and social icons --- */
-
-/* Header layout: logo left, nav right */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Sections */
+section h2 {
+    color: var(--secondary-color);
 }
 
-/* Logo size */
-header img {
-    width: 100px;
-    height: auto;
-}
-
-/* Navigation links */
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
+section p {
+    line-height: 1.5;
     color: var(--accent1-color);
-    font-weight: bold;
 }
 
-/* Social media icons */
-.socialmedia img {
-    width: 32px;
-    height: auto;
-    margin-right: 8px;
-}
-
-/* Center footer content */
+/* Footer */
 footer {
     text-align: center;
     margin-top: 20px;
+    background-color: var(--accent2-color);
+    padding: 10px;
+}
+
+footer p {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: auto;
+    margin: 0 5px;
 }
