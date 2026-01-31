@@ -127,17 +127,29 @@ section p {
 .adventures {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .adventures figure {
+    flex: 1;
     text-align: center;
-    margin: 10px;
+    margin: 0;
 }
 
 .adventures img {
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.adventures figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
 }
 
 /* Footer with right-aligned social icons */
