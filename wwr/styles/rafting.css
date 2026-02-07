@@ -197,7 +197,8 @@ footer p {
 .company-info p {
   font-weight: bold;
   text-align: left;
-  margin-bottom: 4px; /* tighter spacing */
+  margin: 2px 0;   /* tighter spacing */
+  line-height: 1.3; /* compact line spacing */
 }
 
 /* Contact Form Styling */
