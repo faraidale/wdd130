@@ -193,6 +193,13 @@ footer p {
   padding: 10px;
 }
 
+/* Company Info Styling */
+.company-info p {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 4px; /* tighter spacing */
+}
+
 /* Contact Form Styling */
 .contact-form form {
   display: flex;
@@ -208,7 +215,7 @@ footer p {
 .contact-form input,
 .contact-form textarea {
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 2px solid var(--accent1-color); /* thicker, darker border */
   border-radius: 4px;
 }
 
