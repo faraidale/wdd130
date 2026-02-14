@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exciting Expeditions - Contact Us</title>
     <meta name="description"
-      content="Contact Exciting Expeditions for rafting reservations, general inquiries, or website suggestions.">
+      content="Contact Exciting Expeditions for rafting reservations, general inquiries, or website suggestions. Reach out today!">
     <meta name="author" content="Farai Rwambiwa">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -24,58 +24,83 @@
     </header>
 
     <main>
-        <h1>Exciting Expeditions - Contact Us</h1>
+        <h1>Contact Us</h1>
 
-        <!-- Company Info -->
-        <section class="company-info">
-            <h2>White Water Rafting Company</h2>
-            <p>123 Main River Street<br>Kolob, California</p>
-            <p>Phone: +1 999 999 9999</p>
-            <p>Email: info@whitewater.com</p>
-            <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
-        </section>
+        <!-- Company Info and Contact Form Container -->
+        <div class="contact-container">
+            <!-- Company Info with Map -->
+            <section class="company-info">
+                <h2>Exciting Expeditions</h2>
+                <p>123 Main River Street</p>
+                <p>Kolob, California</p>
+                <p>Phone: +1 999 999 9999</p>
+                <p>Email: info@whitewater.com</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50722.46954975241!2d-113.02689824453308!3d37.38838840639447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b5c4b6f0f6d5d7%3A0x6e3e3f3f3f3f3f3f!2sKolob%20Canyons%2C%20Utah!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="300" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
 
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <h2>Get in Touch!</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <!-- Contact Form -->
+            <section class="contact-form">
+                <h2>Get in Touch!</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <p>Purpose:</p>
-                <label for="general"><input type="radio" id="general" name="purpose" value="general"> General Inquiry</label>
-                <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
-                <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <fieldset>
+                        <legend>Message Purpose:</legend>
+                        <label>
+                            <input type="radio" id="general" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
-                </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </section>
+        </div>
 
         <!-- Employee Profiles -->
         <section class="profiles">
             <h2>We Are Here to Serve You</h2>
-            <figure>
-                <img src="images/employee1.jpg" alt="Guide 1">
-                <figcaption>John Doe – Lead Guide</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee2.jpg" alt="Guide 2">
-                <figcaption>Jane Smith – Safety Coordinator</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee3.jpg" alt="Guide 3">
-                <figcaption>Mike Johnson – Trip Planner</figcaption>
-            </figure>
+            <div class="profile-container">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John Doe - Lead Guide">
+                    <figcaption>John Doe<br>Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Jane Smith - Safety Coordinator">
+                    <figcaption>Jane Smith<br>Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Mike Johnson - Trip Planner">
+                    <figcaption>Mike Johnson<br>Trip Planner</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
